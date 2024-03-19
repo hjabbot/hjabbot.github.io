@@ -192,6 +192,10 @@ figure {
     font-weight: 400;
     color: rgba(0, 0, 0, 0.5);
     padding: 0 20px;
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
     width: 100%; }
     @media screen and (max-width: 768px) {
       #colorlib-aside .colorlib-footer {
