@@ -423,7 +423,7 @@ body.offcanvas {
 
 @keyframes cursor-blink {
   0% {
-    content: "";
+    content: ".";
   }
 }
 
@@ -660,7 +660,9 @@ body.offcanvas {
     .services.color-4 .icon2 i {
       color: #a84cb8; }
   .services.color-5 {
-    border-bottom: 2px solid #2fa499; }
+    border-bottom: 2px solid #2fa473; }
+    .services.color-5 .icon2 i {
+      color: #2fa473; }
   .services.color-6 {
     border-bottom: 2px solid #4054b2; }
 
