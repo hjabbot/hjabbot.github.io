@@ -231,7 +231,7 @@ figure {
   float: right;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
-  transition: 0.5s; }
+  transition: 2s; }
   @media screen and (max-width: 768px) {
     #colorlib-main {
       width: 100%;
@@ -247,15 +247,16 @@ figure {
   #colorlib-hero .flexslider {
     border: none;
     z-index: 1;
-    margin-bottom: 0; }
+    margin-bottom: 0;}
     #colorlib-hero .flexslider .slides {
       position: relative;
       overflow: visible; }
       #colorlib-hero .flexslider .slides li {
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: 100% auto;
         background-position: bottom center;
-        min-height: 400px;
+        height: 0;
+        padding-top: 66.67%; 
         position: relative; }
     #colorlib-hero .flexslider .flex-control-nav {
       bottom: 20px;
@@ -286,12 +287,12 @@ figure {
     #colorlib-hero .flexslider .slider-text {
       display: table;
       opacity: 0;
-      min-height: 500px;
+      min-height: 100px;
+      width: 100%;
       z-index: 9; }
       #colorlib-hero .flexslider .slider-text > .slider-text-inner {
         display: table-cell;
         vertical-align: middle;
-        min-height: 700px;
         padding: 2.5em;
         position: relative; }
         @media screen and (max-width: 768px) {
