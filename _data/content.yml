@@ -35,31 +35,31 @@ skills:
 
   column1:
     items:
-      - label: "PHP" #0-10 progress in dots
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        value: "85" #0-100 progress in %
-
       - label: "Python" #0-10 progress in dots
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        value: "95" #0-100 progress in %
+
+      - label: "MATLAB" #0-10 progress in dots
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         value: "75" #0-100 progress in %
 
   column2:
     items:
-      - label: "JavaScript" #0-10 progress in dots
+      - label: "Bash" #0-10 progress in dots
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        value: "75" #0-100 progress in %
+        value: "85" #0-100 progress in %
 
-      - label: "React" #0-10 progress in dots
+      - label: "Git" #0-10 progress in dots
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        value: "70" #0-100 progress in %
+        value: "80" #0-100 progress in %
 
   column3:
     items:
-      - label: "WordPress" #0-10 progress in dots
+      - label: "Solidworks" #0-10 progress in dots
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         value: "90" #0-100 progress in %
 
-      - label: "Adobe XD" #0-10 progress in dots
+      - label: "LaTeX" #0-10 progress in dots
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         value: "80" #0-100 progress in %
 
@@ -75,17 +75,17 @@ resume:
       - name: "Ph.D. - Astronomy &amp; Astrophysics"
         subname: "Australian National University"
         period: "2018 - 2023"
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        text: "Researched supernova physics, developed astronomical instrumentation, manipulated big meteorological datasets."
 
       - name: "B. Engineering - Mechanical (Aerospace)"
         subname: "University of New South Wales"
         period: "2012 - 2016"
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        text: "Graduated with First Class Honours."
 
       - name: "B. Science - Physics"
         subname: "University of New South Wales"
         period: "2012 - 2016"
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        text: "Maintained distinction average throughout."
 
   experience:
     title: "Experience"
@@ -93,12 +93,16 @@ resume:
       - name: "Research Software Engineer"
         subname: "British Antarctic Survey"
         period: "2022 - <b>Present</b>"
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        text: "- Actively and collaboratively developing polar route optimisation algorithm used to work towards BAS's Net Zero goals. <br>
+               - Worked remotely aboard the RRS SDA to deploy production pipeline. Designed and optimised data pipeline to minimise transfers through weak internet connections. <br>
+               - Collaborated closely with IT to set up operational infrastructure, from data ingestation through to output visualisation."
 
       - name: "Telescope Operator"
         subname: "Anglo-Australian Telescope"
         period: "2021 - 2022"
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        text: "- Solely responsible for the safe and continual operation of Australia's most scientifically productive optical telescope. <br>
+               - Diagnosed and rapidly solved telescope operation issues to ensure minimal downtime for multi-million dollar scientific facilities. <br>
+               - Classified meteorological patterns to optimise usage of auxiliary equipment, potentially saving $100,000 p.a. in operational costs."
 
       - name: "Simulation Programmer"
         subname: "CSIRO"
@@ -118,7 +122,7 @@ contacts:
 
     - label: "Freelance"
       icon: "far fa-user"
-      text: "Available Right Now"
+      text: "Get in touch to check availability"
 
     - label: "Email"
       icon: "far fa-envelope"
