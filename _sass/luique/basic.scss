@@ -2347,6 +2347,76 @@ hr {
 	color: #29a587;
 }
 
+.rw-preamble {
+	height: 60px; 
+	line-height: 60px;
+	display: inline-block;
+}
+
+.rw-words {	
+	display: inline;
+	span{
+		position: absolute;
+		opacity: 0;
+		-webkit-animation: rotateWord 18s linear infinite 0s;
+		-ms-animation: rotateWord 18s linear infinite 0s;
+		animation: rotateWord 18s linear infinite 0s;
+	}
+	span:nth-child(2) { 
+	    	-webkit-animation-delay: 3s; 
+		-ms-animation-delay: 3s; 
+		animation-delay: 3s; 
+	}
+	span:nth-child(3) { 
+	    	-webkit-animation-delay: 6s; 
+		-ms-animation-delay: 6s; 
+		animation-delay: 6s; 
+	}
+	span:nth-child(4) { 
+	    	-webkit-animation-delay: 9s; 
+		-ms-animation-delay: 9s; 
+		animation-delay: 9s; 
+	}
+	span:nth-child(5) { 
+	    	-webkit-animation-delay: 12s; 
+		-ms-animation-delay: 12s; 
+		animation-delay: 12s; 
+	}
+	span:nth-child(6) { 
+	    	-webkit-animation-delay: 15s; 
+		-ms-animation-delay: 15s; 
+		animation-delay: 15s; 
+	}
+}
+
+@-webkit-keyframes rotateWord {
+    0% { opacity: 0; }
+    2% { opacity: 0; -webkit-transform: translateY(-30px); }
+	5% { opacity: 1; -webkit-transform: translateY(0px);}
+    17% { opacity: 1; -webkit-transform: translateY(0px); }
+	20% { opacity: 0; -webkit-transform: translateY(30px); }
+	80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+@-ms-keyframes rotateWord {
+    0% { opacity: 0; }
+    2% { opacity: 0; -ms-transform: translateY(-30px); }
+	5% { opacity: 1; -ms-transform: translateY(0px);}
+    17% { opacity: 1; -ms-transform: translateY(0px); }
+	20% { opacity: 0; -ms-transform: translateY(30px); }
+	80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+@keyframes rotateWord {
+    0% { opacity: 0; }
+    2% { opacity: 0; -webkit-transform: translateY(-30px); transform: translateY(-30px); }
+	5% { opacity: 1; -webkit-transform: translateY(0px); transform: translateY(0px);}
+    17% { opacity: 1; -webkit-transform: translateY(0px); transform: translateY(0px); }
+	20% { opacity: 0; -webkit-transform: translateY(30px); transform: translateY(30px); }
+	80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
 .lui-text {
 	opacity: 0.8;
 }
@@ -2533,7 +2603,7 @@ hr {
 }
 
 .section.hero-started .description {
-	padding: 40px 0 40px 0;
+	padding: 10px 0 40px 0;
 	font-size: 18px;
 	max-width: 520px;
 }
@@ -5643,3 +5713,4 @@ a.wp-block-button__link {
 #results-container li:last-child {
 	margin-bottom: 0;
 }
+
