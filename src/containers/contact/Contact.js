@@ -7,6 +7,22 @@ import email from "../../assets/lottie/email";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import StyleContext from "../../contexts/StyleContext";
 
+function ContactForm() {
+  return (
+  <div>
+    <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSc0L5nARtruFQ_QKonMj-RNK9TFUM4MFb1rUMrG2O-WwcqDGg/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+      Name:<br /><input type="text" name="entry.2069977254" /><br />
+      Email address:<br /><input type="text" name="entry.332319714" /> <br />
+      How can I help?<br /><input type="text" name="entry.618086409" />
+      <input type="submit" value="Submit"></input>
+      {/* <button type="submit">Send</button> */}
+    </form>
+    <iframe name="hidden_iframe" id="hidden_iframe" style={{display:'none'}} onload="if(submitted) {}"></iframe>
+  </div>
+  );
+}
+
+
 export default function Contact() {
   const {isDark} = useContext(StyleContext);
   return (
@@ -14,43 +30,8 @@ export default function Contact() {
       <div className="main contact-margin-top" id="contact">
         <div className="contact-div-main">
           <div className="contact-header">
-            <h1 className="heading contact-title">{contactInfo.title}</h1>
-            <p
-              className={
-                isDark
-                  ? "dark-mode contact-subtitle"
-                  : "subTitle contact-subtitle"
-              }
-            >
-              {contactInfo.subtitle}
-            </p>
-            <div
-              className={
-                isDark ? "dark-mode contact-text-div" : "contact-text-div"
-              }
-            >
-              {contactInfo.number && (
-                <>
-                  <a
-                    className="contact-detail"
-                    href={"tel:" + contactInfo.number}
-                  >
-                    {contactInfo.number}
-                  </a>
-                  <br />
-                  <br />
-                </>
-              )}
-              <a
-                className="contact-detail-email"
-                href={"mailto:" + contactInfo.email_address}
-              >
-                {contactInfo.email_address}
-              </a>
-              <br />
-              <br />
+              <ContactForm />
               <SocialMedia />
-            </div>
           </div>
           <div className="contact-image-div">
             {illustration.animated ? (
