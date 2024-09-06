@@ -1,13 +1,12 @@
 import React, {useContext} from "react";
 import "./Contact.scss";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
-import {illustration, contactInfo} from "../../portfolio";
+import {illustration} from "../../portfolio";
 import {Fade} from "react-reveal";
 import email from "../../assets/lottie/email";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import StyleContext from "../../contexts/StyleContext";
 import Swal from 'sweetalert2';
-import Button from "../../components/button/Button";
 
 const ContactForm = () => {
   const sentMessage = () => {
@@ -42,7 +41,7 @@ const ContactForm = () => {
         </tr>
       </table>
     </form>
-    <iframe name="hidden_iframe" id="hidden_iframe" style={{display:'none'}} onload="if(submitted) {}"></iframe>
+    <iframe title="hidden_iframe" name="hidden_iframe" id="hidden_iframe" style={{display:'none'}} onload="if(submitted) {}"></iframe>
   </div>
   );
 }
