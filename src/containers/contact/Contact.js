@@ -7,6 +7,7 @@ import email from "../../assets/lottie/email";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import StyleContext from "../../contexts/StyleContext";
 import Swal from 'sweetalert2';
+import Button from "../../components/button/Button";
 
 const ContactForm = () => {
   const sentMessage = () => {
@@ -18,22 +19,28 @@ const ContactForm = () => {
   }
   return (
   <div>
-    <form name="gform" id="gform" encType="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSc0L5nARtruFQ_QKonMj-RNK9TFUM4MFb1rUMrG2O-WwcqDGg/formResponse?" target="hidden_iframe" onSubmit={sentMessage}>
-      <h2>Contact Me</h2>
-      <div name="input-box">
-        <label>Full Name</label>
-        <input type="text" name="entry.2069977254" className="field" placeholder="Enter your name" required />
-      </div>
-      <div name="input-box">
-        <label>Email Address</label>
-        <input type="email" name="entry.332319714" className="field" placeholder="Enter your email address" required />
-      </div>
-      <div name="input-box">
-        <label>How can I help?</label>
-        <textarea type="text" name="entry.618086409" className="field mess" placeholder="Enter your message" required />
-      </div>
-      <input type="submit" value="Submit"></input>
-      {/* <button type="submit">Send</button> */}
+    <form className="gform" id="gform" encType="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSc0L5nARtruFQ_QKonMj-RNK9TFUM4MFb1rUMrG2O-WwcqDGg/formResponse?" target="hidden_iframe" onSubmit={sentMessage}>
+      <table>
+        <tr>
+          <th><h2>Contact Me</h2></th>
+        </tr>
+        <tr>
+          <td align='right'><span>Full Name</span></td>
+          <td><textarea type="text" name="entry.2069977254" class="fixed" placeholder="Enter your name" required /></td>
+        </tr>
+        <tr>
+          <td align='right'><span>Email Address</span></td>
+          <td><textarea type="email" name="entry.332319714" class="fixed" placeholder="Enter your email address" required /></td>
+        </tr>
+        <tr>
+          <td align="right"><span>How can I help?</span></td>
+          <td><textarea type="text" name="entry.618086409"  class="notfixed" placeholder="Enter your message" required /></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td align='right'><input type="submit" value="Submit" id="submit" class="main-button" ></input></td>
+        </tr>
+      </table>
     </form>
     <iframe name="hidden_iframe" id="hidden_iframe" style={{display:'none'}} onload="if(submitted) {}"></iframe>
   </div>
